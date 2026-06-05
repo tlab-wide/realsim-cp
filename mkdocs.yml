@@ -1,0 +1,90 @@
+site_name: RealSim-CP
+site_description: >-
+  A high-fidelity multimodal cooperative perception dataset for Japanese
+  traffic environments, generated with the DIVP physics-based simulator.
+site_url: https://tlab-wide.github.io/realsim-cp/
+repo_url: https://github.com/tlab-wide/realsim-cp
+repo_name: tlab-wide/realsim-cp
+edit_uri: edit/main/docs/
+copyright: >-
+  Dataset © 2026 RealSim-CP authors — CC BY 4.0 · Code — MIT
+
+theme:
+  name: material
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/tlab-wide/realsim-cp
+
+nav:
+  - Home: index.md
+  - Overview: overview.md
+  - Dataset:
+      - Download: dataset/download.md
+      - Structure: dataset/structure.md
+      - Sensors: dataset/sensors.md
+      - Label Format: dataset/label-format.md
+      - Scenarios & Maps: dataset/scenarios.md
+      - Known Issues: dataset/known-issues.md
+  - Getting Started:
+      - Quickstart: getting-started/quickstart.md
+      - Loading the Data: getting-started/loading-data.md
+  - Tools:
+      - Overview: tools/index.md
+      - Visualizer: tools/visualizer.md
+      - Automation Tool: tools/automation-tool.md
+      - Trajectory Visualizer: tools/trajectory-visualizer.md
+      - Traffic Simulator: tools/traffic-simulator.md
+  - Simulator (DIVP): simulator/divp.md
+  - Benchmark: benchmark.md
+  - FAQ: faq.md

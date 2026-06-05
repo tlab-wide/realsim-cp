@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "realsim-viz"
+version = "0.1.0"
+description = "Desktop Open3D visualizer for the RealSim-CP dataset"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26",
+  "open3d>=0.18",
+  "Pillow>=10",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]

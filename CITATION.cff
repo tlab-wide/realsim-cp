@@ -1,0 +1,60 @@
+cff-version: 1.2.0
+title: >-
+  RealSim-CP: A High-Fidelity Multimodal Cooperative Perception Dataset
+  Bridging the Simulator–Real World Gap
+message: >-
+  If you use the RealSim-CP dataset or tools, please cite the
+  accompanying paper.
+type: dataset
+authors:
+  - given-names: Yuji
+    family-names: Aizono
+    affiliation: The University of Tokyo
+  - given-names: Ehsan
+    family-names: Javanmardi
+    affiliation: The University of Tokyo
+    email: ejavanmardi@g.ecc.u-tokyo.ac.jp
+  - given-names: Fardin
+    family-names: Ayar
+    affiliation: Amirkabir University of Technology
+  - given-names: Mahdi
+    family-names: Javanmardi
+    affiliation: Amirkabir University of Technology
+  - given-names: Manabu
+    family-names: Tsukada
+    affiliation: The University of Tokyo
+  - given-names: Hiroshi
+    family-names: Esaki
+    affiliation: The University of Tokyo
+repository-code: https://github.com/tlab-wide/realsim-cp
+license: CC-BY-4.0
+keywords:
+  - cooperative perception
+  - autonomous driving
+  - V2X
+  - LiDAR
+  - camera
+  - OpenLABEL
+  - simulation
+  - Japan
+preferred-citation:
+  type: conference-paper
+  title: >-
+    RealSim-CP: A High-Fidelity Multimodal Cooperative Perception Dataset
+    Bridging the Simulator–Real World Gap
+  authors:
+    - given-names: Yuji
+      family-names: Aizono
+    - given-names: Ehsan
+      family-names: Javanmardi
+    - given-names: Fardin
+      family-names: Ayar
+    - given-names: Mahdi
+      family-names: Javanmardi
+    - given-names: Manabu
+      family-names: Tsukada
+    - given-names: Hiroshi
+      family-names: Esaki
+  collection-title: >-
+    IEEE Vehicular Technology Conference (VTC2026-Fall)
+  year: 2026

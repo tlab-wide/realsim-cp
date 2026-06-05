@@ -1,0 +1,9 @@
+**/output_data
+**/slprj
+**.autosave
+**.original
+**.slxc
+**.r2019b
+**/generated
+**/__pycache__
+**.log

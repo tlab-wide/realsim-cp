@@ -1,0 +1,33 @@
+ModelName,UDIVPLiDARModel_V20,#モデル名
+fTransmissionDist,262.144,#送信波が到達する最大値[m]
+fRayInterval,0.0533,#走査間隔[msec]
+fTransmissionStrength,30,#走査ビームの送信強度[W]
+fLightReceivingArea,1,#受光集光面積[m2]
+fTransmissionWaveLength,905,#送信波長[nm]
+fReceiveMinWaveLength,900,#太陽光から受ける最小波長[nm]
+fReceiveMaxWaveLength,910,#太陽光から受ける最大波長[nm]
+fLightReceivingSolidAngle,3E-06,#受光立体角[sr]
+fLowerSignalStrength,-100,#signalStrengthの最小値[dB]
+fDeltaAngle,90,#散乱光Δ角度[deg]
+rev_per_min_,600,#回転量[rpm]
+footprint_height_,1,#垂直方向のフットプリント分割数
+footprint_width_,1,#水平方向のフットプリント分割数
+ifov_v_,0.039263952,#垂直方向のフットプリント広がり角
+ifov_h_,0.103401925,#水平方向のフットプリント広がり角
+pulse_width_,2.5,#送出パルスの幅[m]
+enablelbackground_flag_,0,#直接背景光計算フラグ
+enablelsky_flag_,0,#間接背景光計算フラグ
+irradiation_normal_type_,1,#照射法線タイプ (0:ジオメトリック法線/1:シェーディング法線)
+scatteredlight_level_,2,#散乱光計算レベル (0:シャドウレイ計算しない/1:シャドウレイ計算1回(天頂方向)/2:シャドウレイ計算全て)
+enablelibrary_flag_,1,#LiDARライブラリ使用フラグ (0:使用しない/1:使用する)
+interpolation_flag_,1,#補間ON/OFFフラグ
+threads_num_,32,#LiDARライブラリ内使用スレッド数
+enabletransparent_ray_flag_,1,#レイの透過フラグ(0:OFF/1:ON)
+enabletransparent_shadowRay_flag_,0,#シャドウレイの透過フラグ(0:OFF/1:ON(レイの透過フラグがOFFなら使用されない))
+scan_interpolation_mode_,0,#出力データのスキャン方向の補間方法（0:補間なし/1:補間あり）
+output_raindroptexture_flag_,0,#センサー面に付着する雨滴のテクスチャを出力するフラグ（0:出力しない、1:出力する）
+surface_raindropfile_,Precipitation/divp_LiDAR_Surface_precip.csv,#センサー面に付着する雨滴の設定ファイル
+surface_polygonfile_,,#センサー面形状のポリゴンファイル
+
+subBeamProcType_,1,#ビームの分割、結合 方法種別 (1:ビームの分割、結合は知覚で行う 2:ビームの分割は空間描画で行い、結合は知覚で行う 3:ビームの分割、結合は空間描画で行う)
+noiseless_,1,#detect, intensity, distance のノイズのON/OFFスイッチ (0:ノイズあり 1:ノイズなし)

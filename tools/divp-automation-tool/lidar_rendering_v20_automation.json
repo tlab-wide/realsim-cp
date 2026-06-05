@@ -1,0 +1,60 @@
+{   "$comment": "sample configuration file for v20 lidar rendering",
+
+    "rendering": {
+        "max_distance": 262.144,
+        "transmit": {
+            "wave_length": 905.0,
+            "sub_beam_coupling":{
+                "enable": false,
+                "pulse_width": 2.5,
+                "footprint_vert_split": 1,
+                "footprint_horiz_split": 1,
+                "footprint_vert_spread_angle": 0.0,
+                "footprint_horiz_spread_angle": 0.0
+            },
+            "max_shoot_size": 255168
+        },
+        "receive": {
+            "lower_signal_strength": -100,
+            "receiving_area": 1.0
+        },
+        "background_light":{
+            "type": 0,
+            "receiving_solid_angle": 0.000003,
+            "bandpass_filter": {
+                "min_wave_length": 900,
+                "max_wave_length": 910
+            },
+            "shadow_ray_type": 2,
+            "delta_angle": 1.5707963267949
+        },
+        "precipitation": {
+            "windshield": {
+                "setting_file": "",
+                "surface_polygon": "",
+                "output_texture": false
+            },
+            "scattering":{
+                "enable": false,
+                "threshold": 0,
+                "pulse_width": 0.000000004,
+                "min_range": 7.0,
+                "max_range": 20.0,
+                "vert_spread_angle": 0.000685285414277938,
+                "horiz_spread_angle": 0.00180470404415024
+            },
+            "psd_type": 101,
+            "fog_type": 3,
+            "random_seed": -1
+        },
+        "interpolate_vehicle_position": true,
+        "thread_num": 32,
+        "max_depth": 1,
+        "rotation_order": "XYZ",
+        "animation_activated": true,
+        "background": {
+            "type": "SkyLib",
+            "is_observation_spot_jp": false
+        }
+    }
+}

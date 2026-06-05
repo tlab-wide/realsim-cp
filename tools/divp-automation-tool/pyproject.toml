@@ -1,0 +1,16 @@
+[project]
+name = "automation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "matlabengine==24.1.4",
+    "numpy>=2.3.4",
+    "pandas>=2.3.3",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.4",
+]
